@@ -86,6 +86,7 @@ const mousemove = document.querySelector('.mousemove');
 
 document.addEventListener('keydown', function(event) {
     // console.log('Touche enfoncée :', event.key);
+    key.textContent = event.key;
 });
 const keydownContainer = document.querySelector(".keydown");
 // console.log(keydown);
@@ -103,3 +104,18 @@ document.addEventListener("keydown",
         keydownContainer.style.background = "red";
         } 
     });
+
+
+    const menu = document.querySelector("#menu");
+    // console.log(menu);
+
+    window.addEventListener("scroll",
+        ()=>{
+            console.log(window.scrolly);
+            if(window.scrolly>400){
+                menu.style.top = 0;
+            }else{
+            menu.style.top = "-10px"
+            }   
+        });
+    
