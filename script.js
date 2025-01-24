@@ -107,15 +107,64 @@ document.addEventListener("keydown",
 
 
     const menu = document.querySelector("#menu");
-    // console.log(menu);
+    console.log(menu);
 
     window.addEventListener("scroll",
         ()=>{
-            console.log(window.scrolly);
-            if(window.scrolly>400){
-                menu.style.top = 0;
-            }else{
-            menu.style.top = "-10px"
-            }   
+           console.log(window.scrollY);
+         if(window.scrollY > 400){
+           menu.style.top = 0;
+        }else{
+             menu.style.top = -50 +"px";
+             menu.style.visibility = "visible";
+
+         }
         });
     
+
+        //formulaire
+
+        const inputname = document.querySelector("input[type='text']");
+        const inputselect = document.querySelector("select");
+        const form = document.querySelector("form");
+        const userName = document.querySelector("#userName");
+        const langage = document.querySelector("#langage");
+        let user;
+        let lang;
+
+
+
+        inputname.addEventListener("input",(e)=>{
+             user = e.target.value;
+           userName.textContent = e.target.value;
+           userName.innerHTML =` 
+           <div style="color: yellow;">
+
+           ${e.target.value}
+           </div>
+           `;
+
+            // console.log(e.target.value);
+            
+        })
+        inputselect.addEventListener("input",(e)=>{
+             lang = e.target.value;
+            langage.textContent = e.target.value;
+
+
+            // console.log(e.target.value);
+            
+        })
+        
+
+        
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            if (cgu.checked){
+            // alert(Merci ${user} pour votre selection du langage ${lang})
+            console.log(`Merci ${user} pour votre selection du langage ${lang}`);
+            }else{
+              // alert(Veuilez acceptez les CGU );
+              console.log("Veuilez acceptez les CGU");
+            }
+          });
