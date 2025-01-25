@@ -236,10 +236,16 @@ document.addEventListener("keydown",
         console.log(window.document.title) //titre de la page;
 
         //3.navigator
-        // .fornir des information sur le navigateur  et l'environnement de l'utilisateur
-        // . principal proprieter
+        // .fornir des information sur le navigateur  et l'environnement de l'utilisateur.
+        // . principal proprieter:
+        // o userargent:chaine iddentifiant le navigateur.
+        // o language: language preferer de l'utilisateur.
+        // o online : verifie si l'utilisateur est connecte.
+        // . Exemple
 
         console.log(navigator.userAgent);
+        console.log(navigator.language);
+        console.log(navigator.onLine);
         
         
           
