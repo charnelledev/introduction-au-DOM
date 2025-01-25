@@ -235,7 +235,12 @@ document.addEventListener("keydown",
 
         console.log(window.document.title) //titre de la page;
 
-        //3.
+        //3.navigator
+        // .fornir des information sur le navigateur  et l'environnement de l'utilisateur
+        // . principal proprieter
+
+        console.log(navigator.userAgent);
+        
         
           
           
