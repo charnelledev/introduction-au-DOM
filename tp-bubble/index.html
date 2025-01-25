@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tp-bubble</title>
+</head>
+<body>
+
+<style>
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: ;
+margin: 0;
+overflow: hidden;
+cursor: crosshair;
+}
+
+
+h3{
+    font-size: ;
+}
+
+
+.bubble{
+    position: absolute;
+    /* width: 1000px;
+    height: 1000px; */
+    background-color: rgba(255,167, 0, 0.6);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: bubble 1s linear infinite ;
+}
+</style>
+<h3>0</h3>
+
+<script>
+    const counterDisplay = document.queryselector ('h3');
+    let counter = 0;
+
+    const bubble = document.createElement('span');
+    bubble.classList.add('bubble');
+    document.body.appendChild('bubble');
+
+    // const size = Math.random() *200 +100 + 'px';
+    const size = `${Math.random() *200 +100} px`;
+
+    bubble.style.width = size;
+    bubble.style.height = size;
+    console.log(size),
+    
+
+
+    console.log(size);
+    
+    
+</script>
+
+
+
+
+</body>
+</html>
