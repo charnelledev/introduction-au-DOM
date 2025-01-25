@@ -168,3 +168,60 @@ document.addEventListener("keydown",
               console.log("Veuilez acceptez les CGU");
             }
           });
+
+          //load event
+
+          const image = document.getElementById("image");
+          console.log(image);
+
+          function loadResource(){
+          console.log("page entierement chargee");
+          
+          }
+
+          window.addEventListener("load",loadResource);
+
+          image.addEventListener("load",()=>{
+            // console.log('image chargee');
+            
+          })
+
+          //blur event : se produit lorsqu'un element perd le focus
+
+
+          document.getElementById('inpute').addEventListener('blur', function(){
+            this.style.backgroundColor = 'red'
+          }
+          )
+          
+
+          //focus event : se produit lorsqu'un element obtient le focus.
+
+          const inputnom = document.getElementById('nom')
+
+          //ajouter un ecouteur d'evenement 'focus' au au champ de saisie
+
+
+          inputnom.addEventListener('focus', function(){
+            this.classList.add('green')
+          })
+           //ajouter un ecouteur d'evenement 'blur' au au champ de saisie
+
+          inputnom.addEventListener('blur', function(){
+            this.classList.remove('green')
+          })
+
+          //forEach
+
+          const boxes = document.querySelectorAll('.box')
+        //   console.log(boxes);
+
+          boxes.forEach((box) =>{
+            box.addEventListener('click',(e)=>{
+                // console.log(e.target);
+
+                e.target.style.transform = 'scale(0.5)'
+                
+            })
+          })
+          
