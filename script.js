@@ -257,6 +257,7 @@ document.addEventListener("keydown",
 
         console.log(location.hostname);
         console.log(location.hostname);
+        // ce  qui vient apres le hostname c'est le lien doc past
         
         
 
