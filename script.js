@@ -175,7 +175,7 @@ document.addEventListener("keydown",
           console.log(image);
 
           function loadResource(){
-          console.log("page entierement chargee");
+          // console.log("page entierement chargee");
           
           }
 
@@ -248,6 +248,7 @@ document.addEventListener("keydown",
         console.log(navigator.onLine);
 
         // 4 .locatioin :url de la page
+        // .donne des  
         
         
           
