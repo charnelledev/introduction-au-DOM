@@ -246,6 +246,8 @@ document.addEventListener("keydown",
         console.log(navigator.userAgent);
         console.log(navigator.language);
         console.log(navigator.onLine);
+
+        // 4 .locatioin :url de la page
         
         
           
