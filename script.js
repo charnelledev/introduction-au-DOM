@@ -224,4 +224,11 @@ document.addEventListener("keydown",
                 
             })
           })
+
+
+          //1-window
+
+          console.log(window.innerWidth)//largeur de la fenetre;
+          console.log(window.innerWidth)//largeur de la fenetre;
+          
           
