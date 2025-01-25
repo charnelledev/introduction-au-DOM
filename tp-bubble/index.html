@@ -7,7 +7,8 @@
 </head>
 <body>
 
-<style>
+<style> 
+
 body{
 display: flex;
 justify-content: center;
@@ -16,6 +17,7 @@ min-height: 100vh;
 margin: 0;
 overflow: hidden;
 cursor: crosshair;
+filter: hue-rotate(0deg);
 }
 
 
@@ -31,31 +33,58 @@ h3{
     /* width: 1000px;
     height: 1000px; */
     background-color: rgba(255,167, 0, 0.6);
+    opacity: 0;
     border-radius: 50%;
-    pointer-events: none;
-    animation: bubble 1s linear infinite ;
+    animation:anim 8s forwards;
+    filter: hue-rotate(0deg);
+}
+@keyframes anim{
+    to{
+        top: -250px;
+        left: var(--left);
+        opacity: 1;
+        filter: hue-rotate(720deg);
+    }
 }
 </style>
 <h3>0</h3>
 
 <script>
-    const counterDisplay = document.queryselector ('h3');
+    const counterDisplay = document.querySelector('h3');
     let counter = 0;
-
+    const bubbleMaker = () =>{
     const bubble = document.createElement('span');
     bubble.classList.add('bubble');
-    document.body.appendChild('bubble');
+    document.body.appendChild(bubble);
 
     // const size = Math.random() *200 +100 + 'px';
-    const size = `${Math.random() *200 +100} px`;
+    const size = `${Math.random() *200 +100}px`;
 
     bubble.style.width = size;
     bubble.style.height = size;
-    console.log(size),
+    // console.log(size),
+    
+    // console.log(size);
+
+     bubble .style.top = Math.random()*100 + 50 + '%';
+     bubble.style.left = Math.random()*100 + '%';
+     const plusMinus = Math.random() > 0.5 ? 1 : -1;
+     bubble.style.setProperty("-left", Math.random()*100 *plusMinus + '%');
+     bubble.addEventListener('click',()=>{
+        counter++;
+        counterDisplay.textContent = counter;
+        bubble.remove();
+     });
+
+     setTimeout(()=>{
+        bubble.remove();
+     },8000);
+    }
+     setInterval(bubbleMaker,2000);
+    
+     
     
 
-
-    console.log(size);
     
     
 </script>
