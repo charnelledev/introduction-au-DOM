@@ -285,7 +285,19 @@ document.addEventListener("keydown",
         console.log(screen.height);
         console.log(screen.availWidth);
         console.log(screen.availHeight);
+
+
+
+        //temporisation :
+        // setTimeout(Callback, delay)//Execute une fonction apres un delai.setinterval (callback,interval)// execute une font;
         
+
+        // // Exemple :
+
+        setInterval(()=> console.log('message toute les 3 secondes'), 3000
+        );
+        setTimeout(()=> console.log('message apres 2 secondes'), 2000
+        );
         
         
         
