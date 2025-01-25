@@ -270,8 +270,15 @@ document.addEventListener("keydown",
         // . Exemple:
 
         // console.log(history.back());
-        history.forward()
-        console.log('tentative de navigation en avant');
+        // history.forward()
+        // console.log('tentative de navigation en avant');
+
+        //nombre d'entres dans lhistorique
+
+        // console.log(history.length);
+
+        // history.back(); // revient a la page precedente 
+        
         
         
 
