@@ -231,8 +231,11 @@ document.addEventListener("keydown",
           console.log(window.innerWidth)//largeur de la fenetre;
           console.log(window.innerHeight)//hauteur de la fenetre;
         //   window.alert('hello world')
+        //2.document
 
         console.log(window.document.title) //titre de la page;
+
+        //3.
         
           
           
