@@ -258,6 +258,20 @@ document.addEventListener("keydown",
         console.log(location.hostname);
         console.log(location.hostname);
         // ce  qui vient apres le hostname c'est le lien doc past
+
+
+        //historique: navigation dans lhistorique
+         //
+
+
+
+
+
+
+
+        console.log(history.back());
+        
+
         
         
 
