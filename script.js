@@ -261,7 +261,7 @@ document.addEventListener("keydown",
 
 
         //historique: navigation dans lhistorique
-         //
+         // permet de naviguer dans lhistorique  de navigation du navigateur
 
 
 
@@ -269,7 +269,9 @@ document.addEventListener("keydown",
 
 
 
-        console.log(history.back());
+        // console.log(history.back());
+        console.log(window.history.forward);
+        
         
 
         
