@@ -261,16 +261,17 @@ document.addEventListener("keydown",
 
 
         //historique: navigation dans lhistorique
-         // permet de naviguer dans lhistorique  de navigation du navigateur
-
-
-
-
-
-
+         // permet de naviguer dans lhistorique  de navigation du navigateur.
+         //. principale methode:
+         // o back()revient a la page precedante.
+         // o forward () :avance la page suivante.
+         // o bgo(n):deplace de n page (positive ou negative).
+         // o length : nombre d'entrer dans lhistorique .
+        // . Exemple:
 
         // console.log(history.back());
-        console.log(window.history.forward);
+        history.forward()
+        console.log('tentative de navigation en avant');
         
         
 
