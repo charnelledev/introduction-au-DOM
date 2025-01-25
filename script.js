@@ -248,7 +248,13 @@ document.addEventListener("keydown",
         console.log(navigator.onLine);
 
         // 4 .locatioin :url de la page
-        // .donne des  
+        // .donne des  informations sur l'url acctuel et permet de rediger ou modifier L'url
+
+
+        console.log(location.href);
+        location.href = 'https://www.google.com';
+        
+        
         
         
           
