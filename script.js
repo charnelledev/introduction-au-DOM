@@ -250,10 +250,13 @@ document.addEventListener("keydown",
         // 4 .locatioin :url de la page
         // .donne des  informations sur l'url acctuel et permet de rediger ou modifier L'url
 
-
+        // . principales proprietes:
+        
         console.log(location.href);
         location.href = 'https://www.google.com';
+        console.log(location.hostname);
         
+
         
         
         
