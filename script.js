@@ -282,7 +282,7 @@ document.addEventListener("keydown",
 
 
         console.log(screen.width);
-        console.log(screen.height);
+        console.log(screen.height);  
         console.log(screen.availWidth);
         console.log(screen.availHeight);
 
@@ -296,7 +296,7 @@ document.addEventListener("keydown",
 
         setInterval(()=> console.log('message toute les 3 secondes'), 3000
         );
-        setTimeout(()=> console.log('message apres 2 secondes'), 2000
+        setTimeou t(()=> console.log('message apres 2 secondes'), 2000
         );
         
         
